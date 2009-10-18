@@ -1,0 +1,17 @@
+#!/usr/bin/env python
+
+import os
+import sys
+sys.path.insert(1, "%s")
+from umdinst.wrap import capture_compile,compiler_already_invoked,set_compiler_invoked,run
+compiler = %s
+if not compiler_already_invoked():
+   set_compiler_invoked()
+   success = capture_compile(compiler)
+else:
+   success = run(compiler,sys.argv[1:])
+
+if success:
+   sys.exit(0)
+else:
+   sys.exit(1)

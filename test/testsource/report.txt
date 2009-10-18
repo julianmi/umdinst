@@ -1,0 +1,118 @@
+CrayPat:  Version 24.110 (xf NA)  07/14/05 15:55:23
+
+Experiment:  hwpc
+
+Experiment data file:  perflog.hwpc
+
+Current path to data file:  /home/resh/lorin/src/perflog.hwpc
+
+Program invocation:  ./a.out 
+
+Report time environment variables:
+  PAT_ROOT=/opt/ctl/craytools/craytools/cpat
+
+Report command line options:  <none>
+
+Host name and type:<none>
+
+Operating system:  UNICOS/mp 3.0.47 01220814
+
+Number of ssps per pe:  4
+
+Ssps for which data was recorded:
+  0
+  1
+  2
+  3
+  4
+  5
+  6
+  7
+  8
+  9
+  10
+  11
+  12
+  13
+  14
+  15
+
+
+Table 1:  -d P
+          -b exp,pe=HIDE,ssp=HIDE
+
+ |Experiment=1
+ |PE=0='HIDE'
+ |SSP='HIDE'
+
+========================================================================
+Totals for program
+------------------------------------------------------------------------
+Cycles                   0.023 secs  9142583 cycles       
+Instructions graduated  40.261M/sec   920224 instr        
+Branches & Jumps         4.633M/sec   105896 instr        
+Branches mispredicted    0.568M/sec    12975 misses  12.3%
+Correctly predicted      4.065M/sec    92921         87.7%
+Vector instructions      0.534M/sec    12196 instr    1.3%
+Scalar instructions     39.727M/sec   908028 instr   98.7%
+Vector ops              26.759M/sec   611620 ops          
+Vector FP adds                             0 ops          
+Vector FP multiplies                       0 ops          
+Vector FP divides etc                      0 ops          
+Vector FP misc           0.779M/sec    17807 ops          
+Vector FP ops            0.779M/sec    17807 ops     99.9%
+Scalar FP ops              525 /sec       12 ops      0.1%
+Total  FP ops            0.780M/sec    17819 ops          
+FP ops per load                         0.02              
+Scalar integer ops       0.466M/sec    10641 ops          
+Scalar memory refs       7.730M/sec   176691 refs    23.7%
+Vector TLB misses        0.026M/sec      601 misses       
+Scalar TLB misses        0.011M/sec      253 misses       
+Instr  TLB misses        0.012M/sec      275 misses       
+Total  TLB misses        0.049M/sec     1129 misses       
+Dcache references        7.719M/sec   176434 refs         
+Dcache bypass refs       0.011M/sec      257 refs         
+Dcache misses            1.506M/sec    34412 misses       
+Vector integer adds      0.224M/sec     5120 ops          
+Vector logical ops       0.452M/sec    10333 ops          
+Vector shifts            0.232M/sec     5306 ops          
+Vector loads            12.582M/sec   287586 refs         
+Vector stores           12.266M/sec   280348 refs         
+Vector memory refs      24.848M/sec   567934 refs    76.3%
+Scalar memory refs       7.730M/sec   176691 refs    23.7%
+Total memory refs       32.578M/sec   744625 refs         
+Average vector length                  50.15              
+A-reg Instr             26.064M/sec   595721 instr        
+Scalar FP Instr            525 /sec       12 instr        
+Syncs Instr              0.167M/sec     3811 instr        
+Stall VLSU               0.004 secs  1404047 clks         
+Stall VU                 0.017 secs  6662965 clks         
+Vector Load Alloc        0.931M/sec    21284 refs         
+Vector Load Index                          0 refs         
+Vector Load Stride                         0 refs         
+Vector Store Alloc                         0 refs         
+Vector Store Stride                        0 refs         
+========================================================================
+
+Exit status by process and elapsed time by thread:
+
+       Exit           Real-time          
+  PE  Status  Thread     Clocks   Seconds
+    
+   0       0      --         --        --
+
+Resource usage by process and module:
+
+  PE    PID  User time  System time  Module  Memory resident
+             (seconds)    (seconds)            size (MBytes)
+    
+   0  35417   0.042835     0.365952       6       112.062500
+
+Accounting data by process:
+
+       Read &   Read &   Block      Raw       Run Q    Num.
+        Write    Write  I/O Wait  I/O Wait     Wait     of 
+  PE  (MBytes)   Calls   (secs)    (secs)     (secs)  Swaps
+    
+   0  0.007006       8  0.000000  0.000000  0.020427      0
+      0.000846       2          

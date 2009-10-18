@@ -1,0 +1,29 @@
+#!/usr/bin/env python
+# Takes a ".log" file and generates a ".xml" file with the relevant header and footer
+# Just adds the XML header and <log></log> tags
+import sys
+
+# 2 Arguments only
+assert len(sys.argv)==2
+logfile = sys.argv[1]
+assert logfile.endswith('.log')
+xmlfile = logfile[:-4] + '.xml'
+
+i = open(logfile,'r')
+
+o = open(xmlfile,'w')
+o.write('<?xml version="1.0" ?>\n<!DOCTYPE log SYSTEM "log.dtd">\n<log>\n')
+o.write(i.read())
+o.write('</log>')
+
+
+
+
+
+
+
+
+
+
+
+
